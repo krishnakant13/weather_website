@@ -65,7 +65,8 @@ app.get('/weather', (req,res) =>{
            const data = {
                location : location,
                current_temp: forecast_data.current_temp,
-               current_weather:  forecast_data.weather
+               current_weather:  forecast_data.weather,
+               expected_temp: forecast_data.expected_temp
            }
            res.send(data)
     

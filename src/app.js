@@ -28,21 +28,21 @@ app.use(express.static(publicdir))
 app.get('' , (req,res) =>{
     res.render('index', {
         title: 'Weather',
-        name: 'krish'
+        name: 'krish and makarand'
     })
 })
 
 app.get('/about', (req,res) =>{
     res.render('about',{
         title: 'About',
-        name: 'krish'
+        name: 'krish and makarand'
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help',{
         title: 'Help',
-        name: 'krish'
+        name: 'krish and makarand'
     })
 })
 
@@ -96,5 +96,6 @@ app.get('*', (req,res) =>{
 })
 
 app.listen(port,() => {
-    console.log('server is started')
+    console.log(`Listening to the port ${port}`)
+    console.log(`I think this is a better log`)
 })
